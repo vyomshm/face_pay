@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        
+        <style>
+        
+        * {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 60px;
+    display: inline;
+    padding-bottom: 2px;
+}
+
+h2{
+    font-size: 45px;
+    display: inline;
+}
+
+.garv{
+    background: #ffb034;
+}
+img{
+    
+    display: inline;
+    height: 170px;
+    width: 400px;
+}
+
+.center_div{
+    margin: 0 auto;
+    width:80% /* value of your choice which suits your alignment */
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #1ab188;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #179b77;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.container{
+    align-items: center;
+}
+#logo{
+    background-color: #F7941E;
+}
+
+#heading{
+    background-color: #a21f33;
+    color: white;
+}
+
+#title{
+    color : white;
+    background-color: grey;
+}
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <div id="logo">
+                <div id="heading">
+                <li><h1><center>Verification</center></h1></li>
+                    </div>
+                <div id="title">
+                    <li><h2><center>Blink x Times</center></h2></li>
+                </div>
+            </ul>
+        </nav>
+            
+            <img class="bg" src="{{ url_for('video_feed') }}">
+        
+            <button type="submit" class="button button-block"/>Login</button>
+   
+    
+    </body>
+</html>
